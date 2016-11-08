@@ -1,5 +1,5 @@
 <ul>
   <li *ngFor="let d of dossiers | async">
-     {{ d.dossierParlementaire.uid }}
+     {{ d.dossierParlementaire.uid }} : {{ d.dossierParlementaire.titreDossier?.titre }}
   </li>
 </ul>
